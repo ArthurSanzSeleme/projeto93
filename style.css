@@ -33,7 +33,7 @@ background-image: linear-gradient(to right top, #ff5e00, #d92525, #c16a18, #0a73
 	width: 80%;border-radius: 15px;
 }
 
-.roomName
+.user_name
 {
 	cursor: pointer;
 	font-size: 20px;
