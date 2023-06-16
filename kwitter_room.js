@@ -10,7 +10,7 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 userName = localStorage.getItem("userName");
 
@@ -26,7 +26,7 @@ function addRoom()
 
     localStorage.setItem("roomName", roomName);
     
-    window.location = "kwitterPage.html";
+    window.location = "Kwitter_page.html";
 }
 
 function getData() {  firebase.database().ref("/").on('value', function(snapshot) { document.getElementById("output").innerHTML = ""; snapshot.forEach(function(childSnapshot) { childKey  = childSnapshot.key;
